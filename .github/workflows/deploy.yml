@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  deployments: write
 
 concurrency:
   group: cloudflare-pages-production
@@ -26,3 +27,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 077ca49818df2195bd535818d2f33674
           command: pages deploy . --project-name=projectver1game --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
