@@ -4,13 +4,15 @@
 
 ## 배포
 
-`main` 브랜치에 변경 사항을 푸시하면 GitHub Actions가 기존 Cloudflare
-Pages 프로젝트 `projectver1game`에 자동으로 배포합니다.
+Cloudflare Pages의 Git 연동이 `main` 브랜치 변경을 감지해
+`projectver1game.pages.dev`에 자동으로 배포합니다.
 
-GitHub 저장소의 `Settings > Secrets and variables > Actions`에 다음
-Repository secret이 필요합니다.
+별도의 GitHub Actions 배포나 API 토큰은 사용하지 않습니다. 배포 상태와
+프리뷰는 Cloudflare Dashboard의 `projectver1game` 프로젝트에서 확인합니다.
 
-- `CLOUDFLARE_API_TOKEN`: Cloudflare Pages 편집 권한이 있는 API 토큰
+## 사이트 구성
 
-Cloudflare 계정 ID와 Pages 프로젝트 이름은
-`.github/workflows/deploy.yml`에 설정되어 있습니다.
+- 초보 금융 학습 글 20개
+- 소개·편집 원칙·연락처·개인정보처리방침·이용약관
+- 고유 메타데이터, 구조화 데이터, 사이트맵, robots.txt
+- 직접 제작한 교육용 WebP 일러스트 4종
